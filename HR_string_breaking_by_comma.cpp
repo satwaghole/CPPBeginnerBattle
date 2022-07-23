@@ -22,7 +22,24 @@ vector<int> parseInts(string str) {
         charPtr = strtok (NULL, ",");
     }
     return vInt;
+	
+    /*
+     	stringstream s(str);
+	vector <int> a;
+	char ch;
+	int t;
+
+	while(s>>t)
+	{
+		a.push_back(t);
+		s>>ch;
+	}
+	return a;
+    */
 }
+
+
+
 
 int main() {
     string str;
