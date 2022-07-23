@@ -24,15 +24,15 @@ vector<int> parseInts(string str) {
     return vInt;
 	
     /*
-     	stringstream s(str);
+     	stringstream s(str);   
 	vector <int> a;
 	char ch;
 	int t;
 
-	while(s>>t)
+	while(s>>t)   			// breaking string into words- here integers
 	{
 		a.push_back(t);
-		s>>ch;
+		s>>ch; 			// needed to skip the comma , 
 	}
 	return a;
     */
