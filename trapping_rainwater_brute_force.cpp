@@ -6,6 +6,8 @@ using namespace std;
 	i/p - 11
 		  0 1 0 2 1 0 3 1 0 1 2
     o/p- 8
+    
+    Current Water at P = Mi(maxLeft,maxRight) - CurrentHeight;
 */
 
 int max_rainwater_trapped(vector<int> &height)
