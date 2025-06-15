@@ -9,7 +9,9 @@ i/p - 1 3 7 9 2
 o/p- 3 4
 
 */
-
+/******************************************************************************************
+	Below approach is with TC O(n^2)
+*******************************************************************************************/
 int finalArray[2];
 
 int* solve()
@@ -43,6 +45,30 @@ int* solve()
 	}
 
 	return finalArray;
+}
+
+/***************************************************************************
+	TC - O(n)
+***************************************************************************/
+
+int main()
+{
+	std::vector<int> input_array={1,3,7,9,2};
+	int sum=5;
+	std::unordered_map<int, int> map; // TC of UM- O(1)
+	
+	for(int i=0;i<input_array.size();i++)
+	{
+		int second_number = sum- input_array[i];
+		if(map.find(second_number) != map.end())   // element found in map
+		{
+			cout<<"pair = "<<second_number<<"\t"<<input_array[i];
+			cout<<"\n";
+			break;
+		}
+		map[input_array[i]]=i;  //element not found in map, then add entry in map
+	}
+	cout<<"\n Number not found";
 }
 
 int main()
