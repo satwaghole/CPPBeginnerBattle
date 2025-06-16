@@ -68,9 +68,16 @@ int main()
 		}
 		map[input_array[i]]=i;  //element not found in map, then add entry in map
 	}
-	cout<<"\n Number not found";
+	//cout<<"\n Number not found";
+
+	cout<<"\n Elements in map are:\n";
+	for(auto it=map.begin(); it!=map.end(); ++it)
+	{
+		cout<<"\n"<<it->first<<"\t"<<it->second<<"\n";
+	}
 }
 
+/*
 int main()
 {
 	#ifndef ONLINE_JUDGExl
@@ -88,3 +95,4 @@ int main()
 
 	return 0;
 }
+*/
