@@ -22,3 +22,18 @@ int main()
 		
 	return 0;
 }
+
+/* OR  */
+
+int main()
+{
+	int n,i,a[10];
+	cin>>n;
+	
+ 	cout<<bitset<32>(n);  //assuming 32 bit integer
+		
+	return 0;
+	
+} 
+/* output- 00000000000000000000000001111101   */
+	
